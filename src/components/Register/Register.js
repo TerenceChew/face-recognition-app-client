@@ -29,7 +29,7 @@ class Register extends Component {
   }
 
   handleRegister = () => {
-    fetch('https://heroku-fra.herokuapp.com/register', {
+    fetch('https://fra-server.herokuapp.com/register', {
       method: 'POST',
       mode: 'cors',
       headers: {

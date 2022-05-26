@@ -50,7 +50,7 @@ class App extends Component {
   }
 
   updateEntries = () => {
-    fetch('https://heroku-fra.herokuapp.com/image', {
+    fetch('https://fra-server.herokuapp.com/image', {
       method: 'PUT',
       mode: 'cors',
       headers: {
@@ -98,7 +98,7 @@ class App extends Component {
     this.setState({
       imageUrl: this.state.input
     });
-    fetch('https://heroku-fra.herokuapp.com/image/clarifaiApiCall', {
+    fetch('https://fra-server.herokuapp.com/image/clarifaiApiCall', {
       method: 'POST',
       mode: 'cors',
       headers: {

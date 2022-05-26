@@ -22,7 +22,7 @@ class SignIn extends Component {
   }
   
   handleSignIn = () => {
-    fetch('https://heroku-fra.herokuapp.com/signin', {
+    fetch('https://fra-server.herokuapp.com/signin', {
       method: 'POST',
       mode: 'cors',
       headers: {
