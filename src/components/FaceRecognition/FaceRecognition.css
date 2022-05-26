@@ -1,0 +1,25 @@
+.image-area-container {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.image-area {
+  max-width: 650px;
+  position: relative;
+}
+
+.image-area > img {
+  width: 100%;
+  max-width: 55rem;
+  height: auto;
+}
+
+.face-detection-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #149df2 inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}

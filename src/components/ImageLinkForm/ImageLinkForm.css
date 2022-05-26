@@ -1,0 +1,63 @@
+.form-area {
+  min-height: 30vh;
+  width: 90%;
+  max-width: 45rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  /* background-color: rgb(238, 232, 255); */
+}
+
+.form-area > p {
+  font-weight: bolder;
+  font-size: 1.55rem;
+  text-shadow: 1px 1px 1px cyan, -1px -1px 1px rgb(255, 83, 255);
+}
+
+.input-area {
+  min-height: 15vh;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 3px;
+  background:
+    radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0) 21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0) 19px 30px,
+    linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0) 0 0,
+    linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0) 0 0,
+    linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0) 0 0,
+    linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%) 0 0 #fb1;
+    background-size: 40px 60px;
+}
+
+.input-area > input {
+  width: 90%;
+  border: none;
+  text-indent: .5rem;
+}
+
+.input-area > input:focus {
+  outline: 1px solid rgb(131, 131, 131);
+}
+
+.input-area > button {
+  width: 40%;
+  background-color: rgb(176, 116, 255);
+  border: none;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .input-area {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .input-area > input {
+    width: 60%;
+  }
+  .input-area > button {
+    width: 20%;
+  }
+}
+
+
